@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .zoom-container {
+            overflow: hidden;
+            position: relative;
+        }
+        .zoom-image {
+            transition: transform 0.3s ease-in-out;
+        }
+        .zoom-container:hover .zoom-image {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div class="container mx-auto p-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            <!-- Breadcrumb -->
+        <nav class="text-white text-sm mb-4">
+            <a href="#" class="hover:underline">Home</a> >
+            <a href="#" class="hover:underline">T-Shirts</a> >
+            <span class="text-white font-semibold">Oversized T-Shirt - Black</span>
+        </nav>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        </div>
+            <!-- Product Image -->
+            <div class="zoom-container bg-white p-4 rounded-lg shadow">
+                <img src="https://via.placeholder.com/500" alt="Product" class="zoom-image w-full">
+            </div>
+            
+            <!-- Product Details -->
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h1 class="text-3xl font-bold mb-2">Oversized T-Shirt - Black</h1>
+                <p class="text-lg text-gray-600">Premium cotton, comfortable fit.</p>
+                <p class="text-xl font-semibold mt-4">₹999</p>
+                
+                <!-- Size Options -->
+                <div class="mt-4">
+                    <label class="font-semibold">Size:</label>
+                    <select class="w-12 p-2 border rounded-lg mt-2">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select>
+                </div>
+                
+                <!-- Color Options -->
+                <div class="mt-4">
+                    <label class="font-semibold">Color:</label>
+                    <div class="flex space-x-2 mt-2">
+                        <div class="w-8 h-8 rounded-full bg-black border-2 border-gray-300"></div>
+                        <div class="w-8 h-8 rounded-full bg-gray-500 border-2 border-gray-300"></div>
+                        <div class="w-8 h-8 rounded-full bg-white border-2 border-gray-300"></div>
+                    </div>
+                </div>
+                
+                <!-- Product Description -->
+                <div class="mt-6">
+                    <h2 class="text-lg font-semibold">Product Description</h2>
+                    <p class="text-gray-600 mt-2">This oversized t-shirt is crafted from high-quality cotton, providing a soft feel and a stylish streetwear look. Perfect for casual wear and layering.</p>
+                </div>
+                
+                <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 w-full">Add to Cart</button>
+            </div>
+        </div>
+
+         <!-- SHIPPING Description -->
+         <div class="mt-6">
+            <h2 class="text-lg font-semibold">Shipping Terms</h2>
+            <p class="text-white mt-2">SHIPPED NEXT DAY.</p>
+            <p class="text-white mt-2">.</p>
+        </div>
+
+</div>
+        
+
+        <!-- Similar Products -->
+        <h2 class="text-2xl font-bold mt-10 mb-4">Similar Products</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow">
+                <img src="https://via.placeholder.com/150" alt="Similar Product" class="w-full">
+                <p class="mt-2 font-semibold">White Oversized Tee</p>
+                <p class="text-gray-600">₹999</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <img src="https://via.placeholder.com/150" alt="Similar Product" class="w-full">
+                <p class="mt-2 font-semibold">Grey Oversized Tee</p>
+                <p class="text-gray-600">₹999</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <img src="https://via.placeholder.com/150" alt="Similar Product" class="w-full">
+                <p class="mt-2 font-semibold">Navy Oversized Tee</p>
+                <p class="text-gray-600">₹999</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <img src="https://via.placeholder.com/150" alt="Similar Product" class="w-full">
+                <p class="mt-2 font-semibold">Maroon Oversized Tee</p>
+                <p class="text-gray-600">₹999</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
